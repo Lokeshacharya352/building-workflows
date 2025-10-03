@@ -15,7 +15,7 @@ This repo also includes a **GitHub Actions CI workflow** that runs tests on ever
 ---
 
 ## 📂 Project Structure
-'''
+```text
 calculator/
 ├── calculator.py        # Main calculator logic
 ├── test_calculator.py   # Unit tests
@@ -23,5 +23,5 @@ calculator/
 ├── .github/workflows/   # CI workflows
 │   └── python-ci.yml
 └── README.md
-'''
+```
 
