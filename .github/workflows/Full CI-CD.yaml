@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Chekout the code
+      - name: Checkout the code
         uses: actions/checkout@v4
       - name: Install and Build
         run: npm install && npm run build
