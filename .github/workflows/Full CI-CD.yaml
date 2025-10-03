@@ -1,0 +1,27 @@
+name: Full CI/CD
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Chekout the code
+        uses: actions/checkout@v4
+      - name: Install and Build
+        run: npm install && npm run build
+
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Test
+        run: npm test
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy in production
+        run: echo "Deploying app to production 🚀"
