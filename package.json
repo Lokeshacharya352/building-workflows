@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint ."
+    "test": "echo \"No tests yet\""
   },
   "author": "Lokesh Acharya",
   "license": "MIT",
