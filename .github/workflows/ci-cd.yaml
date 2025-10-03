@@ -1,0 +1,8 @@
+name: Hello World
+on: [push,workflow_dispatch]
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello Github Actions
+      - run: echo "Hello ! Github Actions"
