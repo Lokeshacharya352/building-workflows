@@ -4,7 +4,8 @@
   "description": "A small project to test linting workflow",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "echo \"No tests yet\""
   },
   "author": "Lokesh Acharya",
   "license": "MIT",
