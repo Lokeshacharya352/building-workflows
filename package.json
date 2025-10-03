@@ -1,0 +1,14 @@
+{
+  "name": "lint-test-project",
+  "version": "1.0.0",
+  "description": "A small project to test linting workflow",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "author": "Lokesh Acharya",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.46.0"
+  }
+}

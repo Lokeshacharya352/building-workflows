@@ -1,0 +1,16 @@
+name: lint
+on: [push]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the Code/repository
+        uses: actions/checkout@v5
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install Dependecies
+        run: npm install
+      - name: Run Lint    #Linting workflow files helps you detect errors early, maintain consistency, and prevent pipeline failures, saving time and frustration.
+        run: npm run lint
