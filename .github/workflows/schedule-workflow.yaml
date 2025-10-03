@@ -1,0 +1,10 @@
+name: Schedule Workflow
+on:
+ schedule:
+  - cron: "30 12 * * *"  #runs at 12:30 UTC time
+jobs:
+  Demo:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Runs Every Night
+      run: echo "It will run every day at 12.30 UTC "
